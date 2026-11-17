@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Glimmerdeep — a turn-based dungeon delve</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #07080f;
+    height: 100%;
+  }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: system-ui, sans-serif;
+  }
+  #wrap {
+    text-align: center;
+  }
+  canvas {
+    display: block;
+    max-width: 96vw;
+    max-height: 92vh;
+    image-rendering: pixelated;
+    box-shadow: 0 0 60px rgba(255, 214, 102, 0.12), 0 0 0 1px #2e3352;
+    background: #0d0f1a;
+  }
+  #hint {
+    color: #8a8fa8;
+    font-size: 13px;
+    margin-top: 10px;
+  }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="1088" height="640"></canvas>
+  <div id="hint">WASD / arrows to move &amp; attack &middot; Q potion &middot; Space wait &middot; R restart</div>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
